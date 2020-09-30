@@ -1,0 +1,30 @@
+[{
+  "id": 1,
+  "username": "lian",
+  "password": "lian",
+
+  "fieldTypes": [{
+      "name": "Balance Due",
+      "type": "currency"
+    }, {
+      "name": "Due Date",
+      "type": "date"
+    }
+  ]
+}, {
+  "id": 1,
+  "username": "pepe",
+  "password": "pepe",
+
+  "fieldTypes": [{
+      "name": "Text",
+      "type": "text"
+    }, {
+      "name": "Email",
+      "type": "email"
+    }, {
+      "name": "Balance",
+      "type": "currency"
+    }
+  ]
+}]

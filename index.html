@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="advanced custom search, agency, agent, business, clean, corporate, directory, google maps, homes, idx agent, listing properties, membership packages, property, real broker, real estate, real estate agent, real estate agency, realtor">
+
+    <title>Transaction Log Code Exercise</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+
+  <body class="container">
+    <div id="loginPanel">
+        <div class="alert alert-info" role="alert">
+          Valid users/pass: lian/lian, pepe/pepe.
+        </div>
+
+        <div id="errorPanel" class="alert alert-danger" style="display: none" role="alert"></div>
+
+        <form>
+          <div class="form-group">
+            <label for="txtLogin">Login</label>
+            <input type="text" class="form-control" id="txtLogin">
+          </div>
+
+          <div class="form-group">
+            <label for="txtPassword">Password</label>
+            <input type="password" class="form-control" id="txtPassword">
+          </div>
+
+          <p>
+            <button type="button" id="loginBtn" class="btn btn-success">
+              Login
+            </button>
+          </p>
+        </form>
+    </div>
+
+    <div id="listPanel" style="display: none;">
+        <h2>Transaction List</h2>
+
+        <div>
+          <button type="button" id="newTransactionBtn" class="btn btn-primary">
+            New Transaction
+          </button>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <input type="text" id="txtSearch"
+                   class="form-control" placeholder="Search..." style="width: 100%;">
+          </div>
+        </form>
+
+        <table id="transactionTable" class="table" style="width: 100%;">
+          <thead></thead>
+          <tbody></tbody>
+
+          <tfoot>
+            <tr>
+              <td id="pageIndicator"></td>
+              <td>
+                <button id="paginatorFirstBtn" class="btn btn-secondary">First</button>
+                <button id="paginatorNextBtn" class="btn btn-secondary">Next</button>
+                <button id="paginatorPreviousBtn" class="btn btn-secondary">Previous</button>
+                <button id="paginatorLastBtn" class="btn btn-secondary">Last</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+    </div>
+
+    <div id="editPanel" style="display: none;">
+        <h3>New Transaction</h3>
+
+        <form id="editForm">
+            <div class="content"></div>
+
+            <button type="button" id="addTransactionBtn" class="btn btn-primary">Add</button>
+            <button type="button" id="cancelTransactionBtn" class="btn btn-light">Cancel</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
